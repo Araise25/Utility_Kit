@@ -2,12 +2,25 @@
 const b = typeof browser !== "undefined" ? browser : chrome;
 
 // Create context menu on install and set a one-time nudge
-b.runtime.onInstalled.addListener(async () => {
+b.runtime.onInstalled.addListener(async (details) => {
+  if (details.reason !== "install") return;
+
   try {
     b.menus.create({
       id: "closeWithoutTrace",
       title: "Close Tab Without Trace",
       contexts: ["page", "browser_action"]
+    });
+  } catch (_) {}
+
+  // One-time shortcut hint
+  try {
+    b.notifications.create({
+      type: "basic",
+      iconUrl: "icon/icon48.svg",
+      title: "Utility Kit",
+      message:
+      "To use add a shortcut in Add-ons → Manage Extension Shortcuts."
     });
   } catch (_) {}
 });

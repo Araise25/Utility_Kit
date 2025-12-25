@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Utility Kit",
-  "version": "0.4.0",
-  "description": "Close the active tab and remove it from Recently Closed and history in Firefox.",
+  "version": "1.0.0",
+  "description": "Small offline browser utilities",
   "permissions": [
     "tabs",
     "history",
@@ -17,23 +17,28 @@
     "persistent": false
   },
   "browser_action": {
-    "default_title": "Close Tab Without Trace",
+    "default_title": "Utility Kit",
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icon/icon16.svg",
-      "48": "icon/icon48.svg",
-      "128": "icon/icon128.svg"
+      "16": "icons/icon16.svg",
+      "48": "icons/icon48.svg",
+      "128": "icons/icon128.svg"
     }
   },
   "commands": {
     "close_and_forget": {
       "description": "Close current tab and forget it",
-      "suggested_key": { "default": "Alt+Shift+W" }
+      "suggested_key": {
+        "default": "Alt+Shift+W"
+      }
     }
   },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "close-and-forget@example.com"
+ "browser_specific_settings": {
+  "gecko": {
+    "id": "utility-kit@example.com",
+    "data_collection_permissions": {
+      "required": ["none"]
     }
   }
+}
 }
