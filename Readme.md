@@ -6,7 +6,7 @@ We named it **Utility Kit** by default to make the extension look **stealthy and
 
 ---
 
-## ✨ Features
+## Features
 
 - **Close & Forget**: One click wipes a tab’s browsing data after closing.
 - **Stealth Mode**: Shows up as **Utility Kit** in the extension list.
@@ -15,7 +15,7 @@ We named it **Utility Kit** by default to make the extension look **stealthy and
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 
@@ -40,9 +40,9 @@ C:\Projects\stealth\_close
 
 ---
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
-### 🔹 Chrome / Brave / Edge (Chromium browsers)
+### Chrome / Brave / Edge (Chromium browsers)
 
 1. Open your browser and go to:
 
@@ -59,7 +59,7 @@ chrome://extensions
 
 ---
 
-### 🔹 Firefox
+### Firefox
 
 1. Open Firefox and go to:
 
@@ -75,7 +75,7 @@ about\:debugging#/runtime/this-firefox
 
 ---
 
-## ⌨️ Setting Up Shortcuts
+## Setting Up Shortcuts
 
 ### Chrome / Brave / Edge
 
@@ -108,18 +108,10 @@ about:addons
 
 ---
 
-## 🛠️ Usage
+## Usage
 
 1. Open the extension popup.
 2. (Optional) Set a **custom display name** inside the popup for stealth.
 3. Use the button or hotkey to instantly **close & forget** the current tab.
 
 ---
-
-## 📜 License
-
-MIT License. Free to use and modify.
-
-```
-
-
